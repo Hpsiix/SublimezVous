@@ -1,0 +1,30 @@
+<div id="contact" fxLayout="column" >
+    <div>   
+        <h1 style="padding: 0 20px;" fxLayout="row">  
+            <span class="material-icons navbar-icon "   >location_on</span>
+            Contacts & accès
+        </h1>
+        <div class="info" fxLayout="row" fxLayoutAlign="start center">
+            <span class="material-icons "   >location_on</span>
+            <p>1 Rue Paul Cézanne - 30200 - Codolet</p>
+        </div>    
+        <div class="info" fxLayout="row" fxLayoutAlign="start center">
+            <span class="material-icons "   >call</span>
+            <p > 0761657710</p>
+        </div>  
+        <div class="info" fxLayout="row" fxLayoutAlign="start center">
+            <span class="material-icons "   >mail</span>
+            <p>test.boutique@gmail.com</p>
+        </div>  
+       <div style="padding-left:10px ;">
+        <google-map height="270px"
+        width="360px"
+        [center]="center"
+        [zoom]="zoom"
+        (mapClick)="moveMap($event)"
+        (mapMousemove)="move($event)">
+</google-map>
+
+       </div> 
+    </div>
+</div>

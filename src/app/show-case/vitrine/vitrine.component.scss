@@ -1,0 +1,95 @@
+#vitrine{
+    .reservation{
+        border: 1px solid rgb(236, 235, 235)!important;
+        border-radius: 5px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+         width: 40%;
+        height: 450px;
+        position: relative;
+        .image-container{
+            position: relative;
+            bottom: 20%;
+            height:90% ;
+            width:100%;
+            img{
+                position: relative;
+                height:100% ;
+                width:100%;
+                 margin: 0 0;
+            } 
+            .adresse{
+                width: 100%;
+                position: absolute;
+                top: 63%;
+                left: 50%;
+                text-align: center;
+                transform: translate(-50%, -50%);
+                font-size: 19px;
+                color: rgb(88, 87, 87);
+                font-weight:bold
+            }
+            .btn {
+                position: absolute;
+                top: 80%;
+                box-sizing: border-box;
+                appearance: none;
+                background-color: #5E18EB;
+                border: 2px solid #5E18EB;
+                border-radius: 0.6em;
+                color: #5E18EB;
+                cursor: pointer;
+                display: flex;
+                align-self: center;
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1;
+                margin: 20px;
+                padding: 1.2em 2.8em;
+                text-decoration: none;
+                text-align: center;
+                text-transform: uppercase;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+              
+                &:hover,
+                &:focus {
+                  color:white;
+                  outline: 0;
+                }
+                
+              }
+              .first {
+                transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+                &:hover {
+                  box-shadow: 0 0 40px 40px #5E18EB inset;
+                }
+              }
+              .third {
+                border-color: #5E18EB;
+                color: #fff;
+                box-shadow: 0 0 40px 40px #5E18EB inset, 0 0 0 0 #5E18EB;
+                transition: all 150ms ease-in-out;
+                
+                &:hover {
+                  box-shadow: 0 0 10px 0 #5E18EB inset, 0 0 10px 4px #5E18EB;
+                }
+              }
+              
+        }
+        
+    }
+    .image{
+        margin-left: 1%;
+        border: 1px solid rgb(236, 235, 235)!important;
+        border-radius: 5px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+         width: 60%;
+        height: 450px;
+            img{
+                height:100% ;
+                 width:100%;
+                 border-radius: 5px;
+            }
+    }
+    
+}
