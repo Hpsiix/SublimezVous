@@ -18,6 +18,11 @@ import { FormsModule } from '@angular/forms';
 import { CategorieItemComponent } from './components/categorie/categorie-item/categorie-item.component';
 import { CategorieListComponent } from './components/categorie/categorie-list/categorie-list.component';
 import { PrestationListComponent } from './components/prestation/prestation-list/prestation-list.component';
+import { ModalComponent } from './components/modal/modal.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReservationListComponent } from './components/reservation/reservation-list/reservation-list.component';
+import { ProfilComponent } from './components/profil/profil.component';
 
 
 
@@ -36,6 +41,9 @@ import { PrestationListComponent } from './components/prestation/prestation-list
     CategorieItemComponent,
     CategorieListComponent,
     PrestationListComponent,
+    ModalComponent,
+    ReservationListComponent,
+    ProfilComponent,
   ],
   imports: [
     BrowserModule,
@@ -56,12 +64,24 @@ import { PrestationListComponent } from './components/prestation/prestation-list
       { 
         path: 'categorie/:id',
         component:PrestationListComponent
+      },
+      { 
+        path: 'reservation/:id',
+        component:ReservationListComponent
+      },
+      { 
+        path: 'profil/:id',
+        component:ProfilComponent
       }
     ]),
     FlexLayoutModule,
     GoogleMapsModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MatDialogModule,
+    BrowserAnimationsModule,
+    
+  
 
   ],
   providers: [],
