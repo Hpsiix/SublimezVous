@@ -1,0 +1,12 @@
+<div id="reservation" fxLayoutAlign="center center" fxLayout="column">
+      <div fxLayoutAlign="start center" style="padding-left:10%;padding-top:10px; padding-bottom:5px ;width: 100%;">Date</div>
+      <input  [(ngModel)]="data.reservationData.debut" type="datetime-local"  required  >
+      <div fxLayoutAlign="start center" style="padding-left:10%;padding-top:10px; padding-bottom:5px ;width: 100%;">Message</div>
+      <textarea [(ngModel)]="data.reservationData.message" style="width: 80%;"
+          rows="5" cols="33">
+      </textarea>
+  <div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">No Thanks</button>
+    <button mat-button [mat-dialog-close]="data.reservationData" cdkFocusInitial>Ok</button>
+  </div>
+</div>

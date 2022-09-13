@@ -2,15 +2,18 @@
   <div class="header-container" fxLayoutAlign="end center">
     <img class="icon" style="cursor: pointer;" routerLink="" src="../../../assets/basics/app-icon.png" >  
     <div class="navbar-container">
+      <div class="navbar-section" fxLayout="row" fxLayoutAlign="center center" routerLink="./profil/1">
+        <span class="material-icons navbar-icon"  >person</span>
+      </div>
       <div class="navbar-section" fxLayout="row" fxLayoutAlign="center center" routerLink="./login">
         <span class="material-icons-outlined navbar-icon"  >person</span>
         <div *ngIf="isLoggedIn | async " class="navbar-title">Me connecter</div>
       </div>
-      <div class="navbar-section" fxLayout="row" fxLayoutAlign="center center">
-        <span class="material-icons-outlined navbar-icon cart"   >shopping_cart</span>
+      <div class="navbar-section" fxLayout="row" fxLayoutAlign="center center"  routerLink="./reservation/1">
+        <span class="material-icons-outlined navbar-icon cart"   >receipt_long</span>
         <div fxLayout="column">
-          <div class="navbar-title">Mon Panier</div>
-          <div fxLayoutAlign="center center" style="font-size: 13px;"> 0 articles</div>
+          <div class="navbar-title">Mes réservation</div>
+          <div fxLayoutAlign="center center" style="font-size: 13px;" >  0 réservation</div>
         </div>
       </div>
     </div>

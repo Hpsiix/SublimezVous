@@ -1,4 +1,4 @@
-<div id="prestation-list">
+<div id="prestation-list" >
     <h1> {{categorie.nom}}</h1>
     <div class="prestations-container"> 
         <div class="prestation" *ngFor="let prestation of prestations" fxLayout="row">
@@ -8,9 +8,9 @@
         </div>
             <div class="actions" fxLayout="column"> 
                 <div class="prix">{{prestation.prix}}€</div>
-                <div class="temps" fxLayout="row"><span class="material-icons-outlined navbar-icon" style="font-size: 18px; margin-right:5px;" >schedule</span>{{prestation.temps}}</div>
+                <div class="temps" fxLayout="row"><span class="material-icons-outlined navbar-icon" style="font-size: 18px; margin-right:2px;" >schedule</span>{{prestation.temps}}</div>
+                <button  class="btn " (click)="openDialog()" >Réserver</button>
             </div>
         </div>
-
     </div>
 </div>
