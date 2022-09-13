@@ -1,0 +1,37 @@
+#prestation-list{
+    h1{
+        text-align: center;
+    }
+    .prestations-container{
+        .prestation{
+            border: 0.5px rgb(185, 184, 184) solid;
+            padding: 10px 10%;
+            height: 80px;
+            .info{
+                margin-bottom: 20px;
+                .title{
+                    font-weight: 800;
+                }
+                .desc{
+                    padding: 0 10px;
+                    font-size: 12px;
+                    color: gray;
+                    white-space: wrap;
+                    width: 90%;
+                    display: block;
+                    overflow: hidden
+                }
+            }
+            
+            .prix{
+                color:#5E18EB ;
+                text-align: center;
+                font-weight: 600;
+                margin-bottom: 5px;
+            }
+            .temps{
+
+            }
+        }
+    }
+}

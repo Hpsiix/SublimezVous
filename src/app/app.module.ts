@@ -13,6 +13,12 @@ import { PresentationComponent } from './components/show-case/presentation/prese
 import { ContactComponent } from './components/show-case/contact/contact.component';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { LoginComponent } from './components/show-case/login/login.component'
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { CategorieItemComponent } from './components/categorie/categorie-item/categorie-item.component';
+import { CategorieListComponent } from './components/categorie/categorie-list/categorie-list.component';
+import { PrestationListComponent } from './components/prestation/prestation-list/prestation-list.component';
+
 
 
 
@@ -26,7 +32,10 @@ import { LoginComponent } from './components/show-case/login/login.component'
     VitrineComponent,
     PresentationComponent,
     ContactComponent,
-    LoginComponent
+    LoginComponent,
+    CategorieItemComponent,
+    CategorieListComponent,
+    PrestationListComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,10 +48,21 @@ import { LoginComponent } from './components/show-case/login/login.component'
       { 
         path: 'login',
         component:LoginComponent
+      },
+      { 
+        path: 'categories',
+        component:CategorieListComponent
+      },
+      { 
+        path: 'categorie/:id',
+        component:PrestationListComponent
       }
     ]),
     FlexLayoutModule,
-    GoogleMapsModule
+    GoogleMapsModule,
+    HttpClientModule,
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

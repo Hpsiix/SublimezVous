@@ -1,0 +1,5 @@
+<div id="categorie" fxLayoutAlign="center center">
+    <div *ngFor="let categorie of categories" fxLayout="row wrap">
+        <app-categorie-item [categorie]="categorie"  [routerLink]="['/categorie', categorie._id]"></app-categorie-item>
+    </div>
+</div>

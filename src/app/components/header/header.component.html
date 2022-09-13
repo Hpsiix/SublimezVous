@@ -4,7 +4,7 @@
     <div class="navbar-container">
       <div class="navbar-section" fxLayout="row" fxLayoutAlign="center center" routerLink="./login">
         <span class="material-icons-outlined navbar-icon"  >person</span>
-        <div class="navbar-title">Me connecter</div>
+        <div *ngIf="isLoggedIn | async " class="navbar-title">Me connecter</div>
       </div>
       <div class="navbar-section" fxLayout="row" fxLayoutAlign="center center">
         <span class="material-icons-outlined navbar-icon cart"   >shopping_cart</span>

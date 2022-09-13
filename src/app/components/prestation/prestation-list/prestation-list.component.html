@@ -1,0 +1,16 @@
+<div id="prestation-list">
+    <h1> {{categorie.nom}}</h1>
+    <div class="prestations-container"> 
+        <div class="prestation" *ngFor="let prestation of prestations" fxLayout="row">
+           <div class="info" fxLayout="column">
+             <div class="title">{{prestation.libelle}}</div>
+             <div class="desc">{{prestation.description}}</div>
+        </div>
+            <div class="actions" fxLayout="column"> 
+                <div class="prix">{{prestation.prix}}€</div>
+                <div class="temps" fxLayout="row"><span class="material-icons-outlined navbar-icon" style="font-size: 18px; margin-right:5px;" >schedule</span>{{prestation.temps}}</div>
+            </div>
+        </div>
+
+    </div>
+</div>

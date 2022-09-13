@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UtilisateurService } from 'src/app/services/utilisateur/utilisateur.service';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -6,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  isLoggedIn =this.utilisateurService.isLoggedIn;;
+  constructor(public utilisateurService: UtilisateurService) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void { 
+    console.log(this.utilisateurService.isLoggedIn);
+    
   }
 
 }
